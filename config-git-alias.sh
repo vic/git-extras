@@ -18,4 +18,4 @@ for bin in $SCRIPT_PATH/bin/git-*; do
 done
 
 # Update git-extras by simply pulling from remote.
-git config --global alias.update-extras "!(cd $SCRIPT_PATH && git pull)"
+git config --global alias.update-extras "!(cd $SCRIPT_PATH && git pull && ./config-git-alias.sh)"
